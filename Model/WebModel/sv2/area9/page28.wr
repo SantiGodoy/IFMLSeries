@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area9#page28" name="Error" gr:x="555" gr:y="160">
+  <ContentUnits>
+    <MultiMessageUnit id="sv2#area9#page28#mssu17" name="Error" gr:x="0" gr:y="0" linkOrder="sv2#area9#page28#mssu17#ln29">
+      <Message xml:space="preserve">Error en el registro</Message>
+      <Link id="sv2#area9#page28#mssu17#ln29" name="Volver" to="sv2#area9#page29#enu7" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-104,-92,186,58"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page28#mssu17">
+          <layout:Link link="sv2#area9#page28#mssu17#ln29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

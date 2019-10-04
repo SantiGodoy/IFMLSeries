@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area9#page29" name="Registro" gr:x="240" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv2#area9#page29#enu7" name="Nuevo Usuario" linkOrder="sv2#area9#page29#enu7#ln14" gr:x="0" gr:y="0" entity="User">
+      <Field id="sv2#area9#page29#enu7#fld55" name="Username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv2#area9#page29#enu7#fld56" name="Password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv2#area9#page29#enu7#fld57" name="Correo electr&#243;nico" type="string" modifiable="true" attribute="email"/>
+      <Link id="sv2#area9#page29#enu7#ln14" name="Registro" to="sv2#area9#cru4" type="normal" validate="true">
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par33" name="email_email" source="sv2#area9#page29#enu7#fld57" target="sv2#area9#cru4.email"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par35" name="2_Group.oid(defaultGroup)" target="sv2#area9#cru4.User2DefaultGroup.groupOID" sourceValue="2"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par36" name="2_Group.oid(groups)" target="sv2#area9#cru4.User2Group.groupOID" sourceValue="2"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par38" name="Key [oid]_oid" source="key.userOID" target="sv2#area9#cru4.userOID"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par39" name="password_password" source="sv2#area9#page29#enu7#fld56" target="sv2#area9#cru4.password"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par40" name="User Object_User Object" source="entityBean" target="sv2#area9#cru4.entityBeans"/>
+        <LinkParameter id="sv2#area9#page29#enu7#ln14#par41" name="userName_userName" source="sv2#area9#page29#enu7#fld55" target="sv2#area9#cru4.userName"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page29#enu7">
+          <layout:Link link="sv2#area9#page29#enu7#ln14"/>
+          <layout:Field field="sv2#area9#page29#enu7#fld55"/>
+          <layout:Field field="sv2#area9#page29#enu7#fld56"/>
+          <layout:Field field="sv2#area9#page29#enu7#fld57"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

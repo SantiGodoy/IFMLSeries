@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#area3#page17" name="Usuario" landmark="true" gr:x="15" gr:y="0">
+  <ContentUnits>
+    <PowerIndexUnit id="sv4#area2#area3#page17#pwu1" name="Listar usuarios" linkOrder="sv4#area2#area3#page17#pwu1#ln1" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName password email">
+      <Link id="sv4#area2#area3#page17#pwu1#ln1" name="Actualizar" to="sv4#area2#area3#page19#enu2" type="normal" validate="true" preserveForm="false">
+        <LinkParameter id="sv4#area2#area3#page17#pwu1#ln1#par1" name="email_Correo Electr&#243;nico" source="data[].email" target="sv4#area2#area3#page19#enu2#fld5_slot"/>
+        <LinkParameter id="sv4#area2#area3#page17#pwu1#ln1#par2" name="oid_Key Condition [oid]" source="data[].userOID" target="sv4#area2#area3#page19#enu2.userOID"/>
+        <LinkParameter id="sv4#area2#area3#page17#pwu1#ln1#par6" name="password_Password" source="data[].password" target="sv4#area2#area3#page19#enu2#fld4_slot"/>
+        <LinkParameter id="sv4#area2#area3#page17#pwu1#ln1#par7" name="userName_Username" source="data[].userName" target="sv4#area2#area3#page19#enu2#fld3_slot"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#area3#page17#pwu1">
+          <layout:Link link="sv4#area2#area3#page17#pwu1#ln1"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

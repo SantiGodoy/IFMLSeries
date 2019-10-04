@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#page12" name="Ok" gr:x="0" gr:y="220" linkOrder="sv4#area2#page12#ln19">
+  <ContentUnits>
+    <MultiMessageUnit id="sv4#area2#page12#mssu11" name="Exito" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Usuario borrado con &#233;xito</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#page12#mssu11"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv4#area2#page12#ln19" name="Volver" to="sv4#area2#area5#page24#inu4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="180,-38,-140,-138"/>
+</Page>

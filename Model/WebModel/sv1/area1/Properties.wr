@@ -1,0 +1,19 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="130" gr:y="-75" id="sv1#area1" name="Gestion Series" landmark="true" defaultPage="sv1#area1#page2" landmarks="sv1#area1#page2 sv1#area1#page3" protected="false">
+  <OperationUnits>
+    <CreateUnit gr:x="480" gr:y="345" id="sv1#area1#cru1" name="CreateDB" entity="ent1">
+      <OKLink id="sv1#area1#cru1#oln1" name="CreateOK" to="sv1#area1#page2" automaticCoupling="true" gr:bendpoints="-55,-77,220,158"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="450" gr:y="215" id="sv1#area1#dlu1" name="Eliminar Serie" entity="ent1">
+      <Selector id="sv1#area1#dlu1#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area1#dlu1#su3#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area1#dlu1#oln2" name="DeleteOK" to="sv1#area1#page2" automaticCoupling="true" gr:bendpoints="-105,20,230,50"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="580" gr:y="115" id="sv1#area1#mfu2" name="Actualizar series" entity="ent1">
+      <Selector id="sv1#area1#mfu2#su8" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area1#mfu2#su8#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area1#mfu2#oln3" name="OKFlow3" to="sv1#area1#page2" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#area3#page19" name="Actualizar Usuario" gr:x="0" gr:y="165">
+  <ContentUnits>
+    <EntryUnit id="sv4#area2#area3#page19#enu2" name="Actualizar Usuario" linkOrder="sv4#area2#area3#page19#enu2#ln3" gr:x="0" gr:y="0" entity="User" fieldOrder="sv4#area2#area3#page19#enu2#fld3 sv4#area2#area3#page19#enu2#fld4 sv4#area2#area3#page19#enu2#fld5">
+      <Link id="sv4#area2#area3#page19#enu2#ln3" name="Actualizar" to="sv4#area2#mfu1" type="normal" automaticCoupling="true" validate="true"/>
+      <Field id="sv4#area2#area3#page19#enu2#fld3" name="Username" type="string" modifiable="true" attribute="userName" preloaded="true"/>
+      <Field id="sv4#area2#area3#page19#enu2#fld4" name="Password" type="password" modifiable="true" attribute="password" preloaded="true"/>
+      <Field id="sv4#area2#area3#page19#enu2#fld5" name="Correo Electr&#243;nico" type="string" modifiable="true" attribute="email" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#area3#page19#enu2">
+          <layout:Link link="sv4#area2#area3#page19#enu2#ln3"/>
+          <layout:Field field="sv4#area2#area3#page19#enu2#fld3"/>
+          <layout:Field field="sv4#area2#area3#page19#enu2#fld4"/>
+          <layout:Field field="sv4#area2#area3#page19#enu2#fld5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

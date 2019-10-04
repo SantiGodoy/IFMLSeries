@@ -1,0 +1,103 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area1#page10" name="Modificar" gr:x="390" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv1#area1#page10#enu11" name="Modificar Serie" gr:x="0" gr:y="0" entity="ent1" fieldOrder="sv1#area1#page10#enu11#fld84 sv1#area1#page10#enu11#fld85 sv1#area1#page10#enu11#fld86 sv1#area1#page10#enu11#fld87 sv1#area1#page10#enu11#fld88 sv1#area1#page10#enu11#fld89 sv1#area1#page10#enu11#fld90 sv1#area1#page10#enu11#fld91 sv1#area1#page10#enu11#fld92 sv1#area1#page10#enu11#fld93" linkOrder="sv1#area1#page10#enu11#ln39">
+      <Field id="sv1#area1#page10#enu11#fld84" name="Nombre*" type="string" modifiable="true" attribute="ent1#att2" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld84#mnd72" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld85" name="Fecha de estreno*" type="date" modifiable="true" attribute="ent1#att4" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld85#mnd73" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld86" name="Temporadas*" type="integer" modifiable="true" attribute="ent1#att5" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld86#mnd74" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld87" name="Sinopsis*" type="string" modifiable="true" attribute="ent1#att6" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld87#mnd75" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld88" name="Reparto*" type="string" modifiable="true" attribute="ent1#att7" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld88#mnd76" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld89" name="Director*" type="string" modifiable="true" attribute="ent1#att9" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld89#mnd77" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld90" name="Episodios*" type="integer" modifiable="true" attribute="ent1#att10" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld90#mnd80" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld91" name="Puntuaci&#243;n" type="integer" modifiable="true" attribute="ent1#att11" preloaded="true">
+        <VRules>
+          <CompareValidationRule id="sv1#area1#page10#enu11#fld91#cmp17" name="puntuacion &lt;= 5" predicate="lteq" value="5" errorMessage="puntuaci&#243;n &gt; 5"/>
+          <CompareValidationRule id="sv1#area1#page10#enu11#fld91#cmp18" name="puntuacion &gt;= 0" predicate="gteq" value="0" errorMessage="puntuaci&#243;n &lt; 0"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area1#page10#enu11#fld92" name="Idioma*" type="string" modifiable="true" attribute="ent1#att12" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld92#mnd78" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <VRules/>
+      <Field id="sv1#area1#page10#enu11#fld93" name="G&#233;nero*" attribute="ent1#att3" type="string" modifiable="true" preloaded="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area1#page10#enu11#fld93#mnd79" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Link id="sv1#area1#page10#enu11#ln39" name="Guardar" to="sv1#area1#mfu2" type="normal" automaticCoupling="true" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page10#enu11">
+          <layout:Field field="sv1#area1#page10#enu11#fld84"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld85"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld86"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld87"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld88"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld89"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld90"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld91"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld92"/>
+          <layout:Field field="sv1#area1#page10#enu11#fld93"/>
+          <layout:Link link="sv1#area1#page10#enu11#ln39"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

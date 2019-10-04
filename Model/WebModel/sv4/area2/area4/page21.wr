@@ -1,0 +1,97 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#area4#page21" name="Serie" landmark="true" gr:x="160" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv4#area2#area4#page21#enu3" name="Nueva Serie" linkOrder="sv4#area2#area4#page21#enu3#ln7" gr:x="0" gr:y="0">
+      <Link id="sv4#area2#area4#page21#enu3#ln7" name="Nuevo" to="sv4#area2#cru3" type="normal" validate="true">
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par21" name="Director*_Director" source="sv4#area2#area4#page21#enu3#fld25" target="sv4#area2#cru3.ent1#att9"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par22" name="Episodios*_Episodios" source="sv4#area2#area4#page21#enu3#fld21" target="sv4#area2#cru3.ent1#att10"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par23" name="Fecha de estreno*_Fecha de estreno" source="sv4#area2#area4#page21#enu3#fld23" target="sv4#area2#cru3.ent1#att4"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par24" name="G&#233;nero*_G&#233;nero" source="sv4#area2#area4#page21#enu3#fld28" target="sv4#area2#cru3.ent1#att3"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par25" name="Idioma*_Idioma" source="sv4#area2#area4#page21#enu3#fld22" target="sv4#area2#cru3.ent1#att12"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par26" name="Nombre*_Nombre" source="sv4#area2#area4#page21#enu3#fld19" target="sv4#area2#cru3.ent1#att2"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par27" name="Puntuaci&#243;n_Puntuaci&#243;n" source="sv4#area2#area4#page21#enu3#fld27" target="sv4#area2#cru3.ent1#att11"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par28" name="Reparto*_Reparto" source="sv4#area2#area4#page21#enu3#fld20" target="sv4#area2#cru3.ent1#att7"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par29" name="Sinopsis*_Sinopsis" source="sv4#area2#area4#page21#enu3#fld26" target="sv4#area2#cru3.ent1#att6"/>
+        <LinkParameter id="sv4#area2#area4#page21#enu3#ln7#par30" name="Temporadas*_temporadas" source="sv4#area2#area4#page21#enu3#fld24" target="sv4#area2#cru3.ent1#att5"/>
+      </Link>
+      <Field id="sv4#area2#area4#page21#enu3#fld19" name="Nombre*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld19#mnd1" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld20" name="Reparto*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld20#mnd2" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld21" name="Episodios*" type="integer" modifiable="true">
+        <VRules/>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld22" name="Idioma*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld22#mnd3" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld23" name="Fecha de estreno*" type="date" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld23#mnd4" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld24" name="Temporadas*" type="integer" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld24#mnd5" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld25" name="Director*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld25#mnd6" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld26" name="Sinopsis*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld26#mnd7" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld27" name="Puntuaci&#243;n" type="integer" modifiable="true">
+        <VRules>
+          <CompareValidationRule id="sv4#area2#area4#page21#enu3#fld27#cmp1" name="puntuacion &lt;= 5" predicate="lteq" value="5" errorMessage="puntuaci&#243;n &gt; 5"/>
+          <CompareValidationRule id="sv4#area2#area4#page21#enu3#fld27#cmp2" name="puntuacion &gt;= 0" predicate="gteq" value="0" errorMessage="puntuaci&#243;n &lt; 0"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area2#area4#page21#enu3#fld28" name="G&#233;nero*" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area2#area4#page21#enu3#fld28#mnd8" name="Mandatory" errorMessage="Obligatorio"/>
+        </VRules>
+      </Field>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#area4#page21#enu3">
+          <layout:Link link="sv4#area2#area4#page21#enu3#ln7"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld19"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld20"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld21"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld22"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld23"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld24"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld25"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld26"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld27" layout:fieldLayout="StoreTemplates/Rating"/>
+          <layout:Field field="sv4#area2#area4#page21#enu3#fld28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

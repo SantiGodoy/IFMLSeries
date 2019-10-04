@@ -1,0 +1,82 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area9#page31" name="Login" linkOrder="sv2#area9#page31#ln16" gr:x="0" gr:y="5">
+  <ContentUnits>
+    <EntryUnit id="sv2#area9#page31#enu8" name="Login" linkOrder="sv2#area9#page31#enu8#ln15" gr:x="120" gr:y="5" entity="User">
+      <Field id="sv2#area9#page31#enu8#fld62" name="Username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv2#area9#page31#enu8#fld63" name="Password" type="password" modifiable="true" attribute="password"/>
+      <Link id="sv2#area9#page31#enu8#ln15" name="Login" to="sv2#area9#lgu1" type="normal" validate="true">
+        <LinkParameter id="sv2#area9#page31#enu8#ln15#par42" name="userName_Username" source="sv2#area9#page31#enu8#fld62" target="sv2#area9#lgu1.username"/>
+        <LinkParameter id="sv2#area9#page31#enu8#ln15#par43" name="password_Password" source="sv2#area9#page31#enu8#fld63" target="sv2#area9#lgu1.password"/>
+      </Link>
+    </EntryUnit>
+    <MultiMessageUnit id="sv2#area9#page31#mssu19" name="Bienvenido!" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Por favor, identif&#237;quese</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page31#mssu19"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page31#enu8">
+          <layout:Field field="sv2#area9#page31#enu8#fld62"/>
+          <layout:Field field="sv2#area9#page31#enu8#fld63"/>
+          <layout:Link link="sv2#area9#page31#enu8#ln15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area9#page31#ln16" name="Reg&#237;strate" to="sv2#area9#page29#enu7" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

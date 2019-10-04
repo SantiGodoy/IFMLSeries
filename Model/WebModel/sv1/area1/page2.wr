@@ -1,0 +1,147 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="35" id="sv1#area1#page2" name="Listado Series" landmark="true">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="25" id="sv1#area1#page2#mssu2" name="Series">
+      <Message xml:space="preserve">A continuaci&#243;n, se muestra el listado de todas las series:</Message>
+    </MultiMessageUnit>
+    <DataUnit gr:x="195" gr:y="0" id="sv1#area1#page2#dau1" name="Detalles Serie" entity="ent1" displayAttributes="ent1#att2 ent1#att3 ent1#att5 ent1#att10 ent1#att11 ent1#att12 ent1#att9 ent1#att4 ent1#att7 ent1#att6" linkOrder="sv1#area1#page2#dau1#ln36">
+      <Selector id="sv1#area1#page2#dau1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area1#page2#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area1#page2#dau1#ln36" name="Modificar" to="sv1#area1#page10#enu11" type="normal" validate="true" automaticCoupling="true"/>
+    </DataUnit>
+    <IndexUnit id="sv1#area1#page2#inu2" entity="ent1" displayAttributes="ent1#att2 ent1#att3 ent1#att12 ent1#att5 ent1#att10 ent1#att11" gr:x="75" gr:y="125" name="Listado Series" linkOrder="sv1#area1#page2#inu2#ln4 sv1#area1#page2#inu2#ln5">
+      <Link id="sv1#area1#page2#inu2#ln4" name="Ver Detalle" to="sv1#area1#page2#dau1" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area1#page2#inu2#ln5" name="X" to="sv1#area1#dlu1" type="normal" automaticCoupling="true" validate="true"/>
+      <Selector id="sv1#area1#page2#inu2#su7" defaultPolicy="fill" booleanOperator="or">
+        <AttributesCondition id="sv1#area1#page2#inu2#su7#acond6" name="Name contains keyword" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att2" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area1#page2#inu2#su7#acond7" name="Gender contains keyword" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true" attributes="ent1#att3"/>
+      </Selector>
+    </IndexUnit>
+    <EntryUnit id="sv1#area1#page2#enu9" name="Search series by keyword" gr:x="90" gr:y="280" linkOrder="sv1#area1#page2#enu9#ln31">
+      <Field id="sv1#area1#page2#enu9#fld73" name="Texto a buscar" type="string" modifiable="true"/>
+      <Link id="sv1#area1#page2#enu9#ln31" name="Buscar" to="sv1#area1#page2#inu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page2#enu9#ln31#par3" name="_current oid" blank="true" target="sv1#area1#page2#inu2.current.ent1#att1"/>
+        <LinkParameter id="sv1#area1#page2#enu9#ln31#par4" name="Keyword_Gender contains keyword" source="sv1#area1#page2#enu9#fld73" target="sv1#area1#page2#inu2#su7#acond7"/>
+        <LinkParameter id="sv1#area1#page2#enu9#ln31#par5" name="Keyword_Name contains keyword" source="sv1#area1#page2#enu9#fld73" target="sv1#area1#page2#inu2#su7#acond6"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page2#mssu2"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page2#enu9">
+          <layout:Field field="sv1#area1#page2#enu9#fld73"/>
+          <layout:Link link="sv1#area1#page2#enu9#ln31"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page2#inu2" layout:style="MetroStyle">
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att11" layout:attributeLayout="StoreTemplates/Rating"/>
+          <layout:Link link="sv1#area1#page2#inu2#ln4"/>
+          <layout:Link link="sv1#area1#page2#inu2#ln5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page2#dau1" layout:style="WebRatio" layout:frameLayout="WebRatio/Basic">
+          <layout:Link link="sv1#area1#page2#dau1#ln36"/>
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att7"/>
+          <layout:Attribute attribute="ent1#att6"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#page13" name="Error" gr:x="145" gr:y="275">
+  <ContentUnits>
+    <MultiMessageUnit id="sv4#area2#page13#mssu12" name="Error" gr:x="0" gr:y="0" linkOrder="sv4#area2#page13#mssu12#ln21">
+      <Message xml:space="preserve">Error al borrar el usuario</Message>
+      <Link id="sv4#area2#page13#mssu12#ln21" name="Volver" to="sv4#area2#area5#page24#inu4" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#page13#mssu12">
+          <layout:Link link="sv4#area2#page13#mssu12#ln21"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

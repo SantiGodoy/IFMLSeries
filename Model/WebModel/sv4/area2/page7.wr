@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area2#page7" name="Ok" gr:x="715" gr:y="505">
+  <ContentUnits>
+    <MultiMessageUnit id="sv4#area2#page7#mssu7" name="Exito" gr:x="0" gr:y="0" linkOrder="sv4#area2#page7#mssu7#ln34">
+      <Message xml:space="preserve">Serie actualizada con &#233;xito</Message>
+      <Link id="sv4#area2#page7#mssu7#ln34" name="Ir a Series" to="sv4#area2#area3#page20#inu1" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area2#page7#mssu7">
+          <layout:Link link="sv4#area2#page7#mssu7#ln34"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
